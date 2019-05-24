@@ -1,0 +1,103 @@
+@import url("style.css") screen;
+
+@media only screen and (max-width: 900px) {
+    /*regras para o layout em dispositivos de até 900px de largura*/
+    }
+ @media only screen and (max-width: 640px) {
+    /*regras para o layout em dispositivos de até 640px de largura*/
+    }
+
+    body{
+        font-family: "Lato";
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        line-height:normal;
+        background-color:;
+        width: 100%;
+        background: linear-gradient(120deg, #a570e2 0%, #f1669e 80%);
+    }
+
+    #topo{
+        display: flex;
+        justify-content: center;
+        font-size: 250%;
+        font-weight:bold;
+        padding: 10%;
+        margin-top: 50%;
+    }
+    
+#topo_2{
+    font-size: 250%;
+    font-weight:bold;
+    padding: 5%;
+    text-align: center;
+    margin-top: 10%;
+}
+     
+    #menu{
+        display: flex;
+        justify-content: space-around;
+        color: white;
+    }
+
+
+
+    #texto{
+        justify-content: center;
+        padding: 15px;
+        text-align: center;
+        align-items: center;
+        font-size: 150%;
+        padding: 2%;
+    }
+ #espaco_texto1 {
+     padding: 2%;
+ }
+    #formulario{
+        margin:0;
+        position:relative;
+        width:50%;
+        height:100%;
+        padding-top: 3%;
+    }
+
+    #meio{
+        text-align: center;
+    }
+    form {
+        opacity:0.8;
+        font-family: "Lato";
+        font-size:1em;
+        position: relative;
+        text-align: center;
+            
+        line-height:185%;
+        background-color: #B0C4DE;
+        box-shadow:0px 0px 5px 5px black;
+        
+        /* novos valores */  
+        left: 25%; /* metade da pagina */
+        top: 50%; /* metade da pagina */  
+        width: 300px; /* utilize um tamanho que seja suficiente para seu conteúdo horizontal */
+        height: 500px; /* utilize um tamanho que seja suficiente para seu conteúdo vertical */
+        margin-left: -200px; /* utilize a metade do valor setado no width para trazer o elemento ao centro horizontal da tela */
+        margin-top: 130px; /* utilize a metade do valor setado no height para trazer o elemento ao centro vertical da tela */
+        font-size: 150%;    
+    }
+
+    #name{
+        border-radius: 20px;
+    }
+    #type{
+        border-radius: 20px;
+    }
+    #date{
+        border-radius: 20px;
+    }
+    #hour{
+        border-radius: 20px;
+    }
+    #adress{
+        border-radius: 20px;
+    }

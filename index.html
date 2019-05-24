@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <link rel="icon" type="image/png" href="cor.JPG">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <title>ReDev</title>
+</head>
+
+<body>
+    <section id="menu">
+            <section >
+                <div> <h1 id="topo"> ReDev </h1></div> 
+                </section> 
+                <section >
+                    <div> <h2 id="topo_2"> To Learn, Unlearn and Relearn </h2> </div>
+                </section> 
+                <section id="topo_3">
+                    <div> <img src="pc.JPG" alt="coração"></div>
+                </section>
+    </section> 
+
+    <section id="texto">
+        <div id="espaco_texto1">
+                <p> A área da tecnologia é ampla, esta em ascensão e todos lidamos direta ou indiretamente com ela. <br>
+                    Poderia dar vários exemplos aqui, do impacto que ela causa,<br>
+                    mas me limitarei a focar em um humilde exemplo:</p>
+                EU ! Com muito orgulho, muito amor e muito código, sou estudante do 1º semestre do Curso deAnálise e Desenvolvimento de sistemas ...Go go go Dev_Fabí </p>
+        </div>
+        <div>
+                <b id="meio"> Criei este site para que seja nosso! </b>
+                <p> Existe amor em SP sim, meu caro Criolo e muito código também !</p>
+                <p> Aqui, você poderá consultar meetups, cursos, hackathons, palestras, worshops e etc, relacionados a área da
+                    TI em SP. </p>
+                <p> Mas como ele é nosso, conto com você para preencher o formulário abaixo e assim deixar aqui atualizado
+                    sempre </p>
+        </div>
+    </section> 
+    <section id="cor_formulario">
+        <div>
+            <form id="formulario">
+                Nome da Atividade:
+                <input type="text" id="name"> <br>
+                Tipo de atividade:
+                <input type="text" id="type"><br>
+                Data:
+                <input type="text" id="date"> <br>
+                Horário:
+                <input type="text" id="hour"> <br>
+                Endereço:
+                <input type="text" id="adress"> <br> <br>
+                <button type="button" class="btn btn-primary btn-lg" onclick="go()"> Enviar </button>
+            </form>
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    function go() {
+
+        if (name.value == "" || type.value == "" || date.value == "" || hour.value == "" || adress.value == "") {
+            swal({
+                title: "Aviso",
+                text: "Preencha todos os campos!",
+                icon: "warning",
+                button: "ok",
+            });
+        } else {
+            swal({
+                title: "Obrigada!",
+                text: "Aguarde o e-mail com todas as informações",
+                icon: "success",
+                button: "ok",
+            });
+        }
+    }
+
+</script>
