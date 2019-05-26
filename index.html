@@ -9,7 +9,10 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
     <title>ReDev</title>
 </head>
 
@@ -59,32 +62,5 @@
             </form>
         </div>
     </section>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
-
 </html>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script>
-    function go() {
-
-        if (name.value == "" || type.value == "" || date.value == "" || hour.value == "" || adress.value == "") {
-            swal({
-                title: "Aviso",
-                text: "Preencha todos os campos!",
-                icon: "warning",
-                button: "ok",
-            });
-        } else {
-            swal({
-                title: "Obrigada!",
-                text: "Aguarde o e-mail com todas as informações",
-                icon: "success",
-                button: "ok",
-            });
-        }
-    }
-
-</script>
