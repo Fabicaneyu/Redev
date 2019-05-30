@@ -47,18 +47,18 @@
     </section> 
     <section id="cor_formulario">
         <div>
-            <form id="formulario">
+            <form id="form_registro" method="post" onsubmit="return go()">
                 Nome da Atividade:
-                <input type="text" id="name"> <br>
+                <input type="nome" id="name" name="nombre"><br>
                 Tipo de atividade:
-                <input type="text" id="type"><br>
+                <input type="tipo" id="type" name="type"><br>
                 Data:
-                <input type="text" id="date"> <br>
+                <input type="data" id="date" name="date"> <br>
                 Horário:
-                <input type="text" id="hour"> <br>
+                <input type="horário" id="hour" name="hour"> <br>
                 Endereço:
-                <input type="text" id="adress"> <br> <br>
-                <button type="button" class="btn btn-primary btn-lg" onclick="go()"> Enviar </button>
+                <input type="endereco" id="adress" name="adress"> <br> <br>
+                <button class="btn btn-primary btn-lg"> Enviar </button>
             </form>
         </div>
     </section>
